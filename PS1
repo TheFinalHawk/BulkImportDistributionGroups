@@ -1,0 +1,1 @@
+Import-Csv “D:\list.csv” | foreach{Add-DistributionGroupMember -Identity “GroupName” -Member $_.alias}
